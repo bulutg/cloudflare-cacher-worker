@@ -4,7 +4,7 @@ import { TaskFetch } from "./endpoints/taskFetch";
 import { TaskList } from "./endpoints/taskList";
 
 // Start a Hono app
-const app = new Hono();
+const app = new Hono<{Bindings: Env}>();
 
 // Setup OpenAPI registry
 const openapi = fromHono(app, {

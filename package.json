@@ -3,10 +3,10 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"deploy": "cloudflare-cacher-worker/node_modules/.bin/wrangler deploy",
-		"dev": "cloudflare-cacher-worker/node_modules/.bin/wrangler dev",
-		"start": "cloudflare-cacher-worker/node_modules/.bin/wrangler dev",
-		"cf-typegen": "cloudflare-cacher-worker/node_modules/.bin/wrangler types"
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"cf-typegen": "wrangler types"
 	},
 	"dependencies": {
 		"chanfana": "^2.0.2",

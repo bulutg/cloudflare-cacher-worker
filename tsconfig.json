@@ -18,7 +18,7 @@
 		"skipLibCheck": true,
 		"strict": false,
 		"traceResolution": false,
-		"outDir": "tsconfig",
+		"outDir": "",
 		"target": "esnext",
 		"module": "esnext",
 		"types": [
@@ -27,8 +27,6 @@
 			"@cloudflare/workers-types/2023-07-01"
 		]
 	},
-	"exclude": [
-      "cloudflare-cacher-worker/node_modules", "dist", "tests"],
-	"include": [
-      "src", "scripts"]
+	"exclude": ["node_modules", "dist", "tests"],
+	"include": ["src", "scripts", "*.d.ts"]
 }
