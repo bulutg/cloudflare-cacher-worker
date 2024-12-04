@@ -1,18 +1,19 @@
 import { fromHono } from "chanfana";
 import { Hono } from "hono";
 import { TaskFetch } from "./endpoints/taskFetch";
-import { TaskList } from "./endpoints/taskList";
+import {supabaseMiddleware} from "./middleware/supabase";
 
 // Start a Hono app
-const app = new Hono<{Bindings: Env}>();
+const app = new Hono<{ Bindings: Env}>();
+
+app.use(supabaseMiddleware)
 
 // Setup OpenAPI registry
 const openapi = fromHono(app, {
 	docs_url: "/",
 });
 
-// Register OpenAPI endpoints
-openapi.get("/api/tasks", TaskList);
+// Register OpenAPI endpoint
 openapi.get("/api/tasks/:taskSlug", TaskFetch);
 
 // Export the Hono app
