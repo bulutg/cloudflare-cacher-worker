@@ -96,7 +96,7 @@ export class TaskFetch extends OpenAPIRoute {
 			response.headers.append("Cache-Control", "s-maxage=604800");
 
 			// Clone the response before caching because the body can only be read once
-			c.waitUntil(cache.put(cacheKey, response.clone()));
+			c.executionCtx.waitUntil(cache.put(cacheKey, response.clone()));
 		} else {
 			console.log(`Cache hit for: ${c.req.url}.`);
 		}
