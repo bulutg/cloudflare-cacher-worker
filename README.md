@@ -1,9 +1,15 @@
-# Cloudflare Workers OpenAPI 3.1
+# Cloudflare Cacher Worker with Cache API and Supabase
 
-This is a Cloudflare Worker with OpenAPI 3.1 using [chanfana](https://github.com/cloudflare/chanfana) and [Hono](https://github.com/honojs/hono).
+A lightweight Cloudflare Worker project integrating Supabase and the Cache API to efficiently manage caching and serverless database interactions.
 
-This is an example project made to be used as a quick start into building OpenAPI compliant Workers that generates the
-`openapi.json` schema automatically from code and validates the incoming request to the defined parameters or request body.
+This project is designed for developers seeking to leverage the Cache API for optimized performance and reduce database load while utilizing Supabase for simple and scalable backend integration.
+
+Based on: https://github.com/cloudflare/workers-sdk/tree/main/packages/create-cloudflare/templates/openapi
+
+## Features
+- Cache API Utilization: Implement caching for improved response times and reduced requests to the origin (Supabase).
+- Supabase Integration: Simplify data management with Supabase's powerful backend-as-a-service.
+- Serverless Deployment: Run entirely on Cloudflare Workers for minimal infrastructure overhead.
 
 ## Get started
 
