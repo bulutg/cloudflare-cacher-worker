@@ -2,7 +2,7 @@
 
 A lightweight Cloudflare Worker project integrating Supabase and the Cache API to efficiently manage caching and serverless database interactions.
 
-This project is designed for developers seeking to leverage the Cache API for optimized performance and reduce database load while utilizing Supabase for simple and scalable backend integration.
+This project is designed for developers seeking to leverage the [Cloudflare global network cache](https://developers.cloudflare.com/workers/runtime-apis/cache/) for optimized performance and reduce database load while utilizing Supabase for simple and scalable backend integration.
 
 Based on: https://github.com/cloudflare/workers-sdk/tree/main/packages/create-cloudflare/templates/openapi
 
