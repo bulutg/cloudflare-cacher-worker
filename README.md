@@ -1,4 +1,4 @@
-# Cloudflare Cacher Worker with Cache API and Supabase
+# Distributed Cloudflare Cacher Worker with Cache API and Supabase
 
 A lightweight Cloudflare Worker project integrating Supabase and the Cache API to efficiently manage caching and serverless database interactions.
 
